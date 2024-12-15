@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="stylecal.css">
+    <script src="scriptcal.js" ></script>
+</head>
+
+<body>
+
+    <div class="body">
+          
+        <div class="main_wrap">
+
+            <input id="output" placeholder="0"></input>
+            <div class="wrap1">
+                <button onclick="clearAllContent()" class="one">AC</button>
+                <button onclick="clearlast()" class="one"><i class="fa-solid fa-delete-left"></i></button>
+                <button onclick="displayContent('%')"class="one">%</button>
+                <button onclick="displayContent('/')"class="two">÷</button>
+            </div>
+            <div class="wrap1">
+                <button onclick="displayContent('7')">7</button>
+                <button onclick="displayContent('8')">8</button>
+                <button onclick="displayContent('9')">9</button>
+                <button onclick="displayContent('*')" class="two">×</button>
+            </div>
+            <div class="wrap1">
+                <button onclick="displayContent('4')">4</button>
+                <button onclick="displayContent('5')">5</button>
+                <button onclick="displayContent('6')">6</button>
+                <button onclick="displayContent('-')" class="two">-</button>
+            </div>
+            <div class="wrap1">
+                <button onclick="displayContent('1')">1</button>
+                <button onclick="displayContent('2')">2</button>
+                <button onclick="displayContent('3')">3</button>
+                <button onclick="displayContent('+')" class="two">+</button>
+            </div>
+            <div class="wrap1">
+                <button onclick="displayContent('0')" class="b1">0</button>
+                <button onclick="displayContent(',')">,</button>
+                <button onclick="showresult()" class="two">=</button>
+
+            </div>
+        </div>
+
+    </div>
+  
+
+</body>
+
+</html>
